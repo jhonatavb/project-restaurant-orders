@@ -1,6 +1,7 @@
 import csv
 from collections import defaultdict
 
+
 def reader_csv(path):
     with open(path, "r") as file:
         restaurant_data = csv.reader(file)
@@ -58,4 +59,3 @@ def analyze_log(path_to_file):
             f"{not_ordered_joao}\n"
             f"{without_frequency_joao}\n"
         )
-
