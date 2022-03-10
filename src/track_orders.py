@@ -9,7 +9,7 @@ class TrackOrders:
         self.costumer_info = dict()
 
     def __len__(self):
-        return len(self.data) 
+        return len(self.data)
 
     def add_new_order(self, costumer, order, day):
         self.menu.add(order)
@@ -28,7 +28,7 @@ class TrackOrders:
             self.costumer_info[costumer]["orders"],
             key=self.costumer_info[costumer]["orders"].get,
         )
-        
+
         return costumer_fav_order
 
     def get_never_ordered_per_costumer(self, costumer):
