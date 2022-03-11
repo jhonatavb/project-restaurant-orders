@@ -21,7 +21,7 @@ class TrackOrders:
         costumer_log["orders"][order] += 1
         costumer_log["visit"] = set()
         costumer_log["visit"].add(day)
-        self.costumer_info[costumer] = log
+        self.costumer_info[costumer] = costumer_log
 
     def get_most_ordered_dish_per_costumer(self, costumer):
         costumer_fav_order = max(
